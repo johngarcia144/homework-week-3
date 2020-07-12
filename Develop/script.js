@@ -1,16 +1,22 @@
 // Assignment Code
 document.querySelector("#generate").addEventListener("click", writePassword);
 
-const upperCaseCharCode = arrayFromLowToHigh(65, 90)
-const lowerCaseCharCode = arrayFromLowToHigh(97, 122)
-const numbersCharCode = arrayFromLowToHigh(48, 57)
-const symbolsCharCode = arrayFromLowToHigh(33, 47).concat(
+var upperCaseCharCode = arrayFromLowToHigh(65, 90);
+var lowerCaseCharCode = arrayFromLowToHigh(97, 122);
+var numbersCharCode = arrayFromLowToHigh(48, 57);
+var symbolsCharCode = arrayFromLowToHigh(33, 47).concat(
   arrayFromLowToHigh(58, 64)
 ).concat(
   arrayFromLowToHigh(91,96)
 ).concat(
   arrayFromLowToHigh(123, 126)
-)
+);
+
+var confirmLength = "";
+var confirmSymbols;
+var confirmUpperCase;
+var confirmLowerCase;
+var confirmNumbers;
 
 function arrayFromLowToHigh(low, high) {
   const array = []
@@ -20,7 +26,6 @@ function arrayFromLowToHigh(low, high) {
   return array
 }
 
-// Write password to the #password input
 function writePassword(characterAmount, includeUpperCase, includeNumbers, includeSymbols) {
   let charCodes = lowerCaseCharCode
   if (includeUpperCase) charCodes = charCodes.concat(upperCaseCharCode)
@@ -34,6 +39,7 @@ function writePassword(characterAmount, includeUpperCase, includeNumbers, includ
   }
   return passwordCharacters.join("")
 }
+
 var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
