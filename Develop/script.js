@@ -12,7 +12,15 @@ var confirmUpperCase;
 var confirmLowerCase;
 var confirmNumbers;
 
+function generatePassword() {
+  var confirmLength = (prompt("How long would you like your password to be? Please choose between 8 and 50 characters."));
 
+  while(confirmLength <= 7 || confirmLength >= 51) {
+    alert("Numbers aren't hard. Try again.");
+    var confirmLength = (prompt("How long would you like your password to be? Please choose between 8 and 50 characters"));
+    } 
+    alert(`Your password will have ${confirmLength} characters`);
+}
 
 
 var password = generatePassword();
