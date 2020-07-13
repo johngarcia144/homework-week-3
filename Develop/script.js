@@ -1,4 +1,3 @@
-// Assignment Code
 document.querySelector("#generate").addEventListener("click", writePassword);
 
 var symbolsChar = ["!", "&", "#", ",", "*", "+", "$", ".", "/", "<", ">", "?","~", "%"];
@@ -25,8 +24,7 @@ function generatePassword() {
       var confirmUpperCase = confirm("Click OK to include uppercase letters in your password");
       var confirmLowerCase = confirm("Click OK to include lower case letters in your password");
       var confirmNumbers = confirm("Click OK to include numbers in your password");  
-
-      
+  
       var passwordCharacters = []
       
       if (confirmSymbols) {
@@ -47,7 +45,6 @@ function generatePassword() {
   
         console.log(passwordCharacters)
   
-        // Empty string to be filled based on for loop selecting random characters from the array
         var randomPassword = ""
         
         for (var i = 0; i < confirmLength; i++) {
@@ -57,7 +54,6 @@ function generatePassword() {
         return randomPassword;
   }
   
-  // Write password to the #password input
   function writePassword() {
     var password = generatePassword();
     var passwordText = document.querySelector("#password");
