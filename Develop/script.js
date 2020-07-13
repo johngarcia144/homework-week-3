@@ -61,9 +61,9 @@ function generatePassword() {
     passwordText.value = password;
   }
 
-  function copyPassword() {
-    document.querySelector("#randomPassword").select();
-    document.execCommand('copy');
+  function copyButton() {
+    document.querySelector("#password").select();
+    document.execCommand("copy");
     alert("Copied password to clipboard");
   }
-  copyBtn.addEventListener("click", copyPassword);
+  copyPass.addEventListener("click", copyButton);
