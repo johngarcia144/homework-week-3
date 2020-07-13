@@ -4,4 +4,8 @@ For this week's project, we were given an HTML and CSS file and told to create a
 
 I began by pseudocoding out the problem as best I could, but it turned out creating all the arrays, loops, and functions was almost impossible for me without looking back at past acticivities, and using my "google-fu" to find answers. I realize, as many have told me, this is a huge part of being a coder - looking elsewhere for answers. I have found it's a good skill to know what quesitons to ask, i.e. how would I create this loop, instead of how do you get the information onto the page.
 
-I had a few false-starts, including a few hours looking into ASCII character codes, before creating longer arrays and going from there. And once 
+I had a few false-starts, including a few hours looking into ASCII character codes, before creating longer arrays and going from there. And once the password generated, I created a simple copy to clipboard button. 
+
+Overall, this was insanely hard for me. But I'm proud I was able to finish. 
+
+View the finished product here: https://johngarcia144.github.io/random-password-generator/
